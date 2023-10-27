@@ -14,9 +14,10 @@ use App\Http\Controllers\RankController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [RankController::class, 'index']);
+
+Route::get('/about', function () {
+    return view('pages.about');
 });
 
 Route::get('tests/test', [TestController::class, 'index']);
-Route::get('layouts/app', [RankController::class, 'index']);

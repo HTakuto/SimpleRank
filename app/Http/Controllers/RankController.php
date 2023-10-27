@@ -8,6 +8,6 @@ use App\Models\Rank;
 class RankController extends Controller
 {
     public function index(){
-        return view('layouts.app');
+        return view('pages.main');
     }
 }
