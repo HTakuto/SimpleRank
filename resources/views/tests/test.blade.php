@@ -10,9 +10,9 @@
     <title>SimpleRank</title>
 </head>
 <body>
-    @include('layouts.header')
-    @include('layouts.hamburger')
-    @include('layouts.main')
+    @include('partials.header')
+    @include('partials.hamburger')
+    @include('partials.main')
 
     <script src="{{ asset('js/hamburger.js') }}"></script>
 </body>
