@@ -17,23 +17,40 @@
     <!-- About Section -->
     <div class="about_wrapper">
         <div class="about_content_main">
-            <div id="siteDescription" class="content-toggle">
-                <p>SimpleRankとは？</p>
-                <p class="hidden-content">testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
-            </div>
-            <h2>このサイト内のリンクは何ですか？</h2>
-            <div id="siteLinks" class="content-toggle">
-                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
-            </div>
-
-            <h2>本サイトはどのような人に向いていますか？</h2>
-            <div id="targetAudience" class="content-toggle">
-                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+            <div class="question-toggle" data-toggle="siteDescription">
+                <div class="content-toggle">
+                    <h2>SimpleRankとは？</h2>
+                </div>
+                <div class="hidden-content">
+                    testtesttesttesttesttesttest
+                </div>
             </div>
 
-            <h2>何を基準にランキングを生成していますか？</h2>
-            <div id="rankingCriteria" class="content-toggle">
-                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+            <div class="question-toggle" data-toggle="siteLinks">
+                <div class="content-toggle">
+                    <h2>このサイト内のリンクは何ですか？</h2>
+                </div>
+                <div class="hidden-content">
+                    testtesttesttesttesttesttest
+                </div>
+            </div>
+
+            <div class="question-toggle" data-toggle="targetAudience">
+                <div class="content-toggle">
+                    <h2>本サイトはどのような人に向いていますか？</h2>
+                </div>
+                <div class="hidden-content">
+                    testtesttesttesttesttesttest
+                </div>
+            </div>
+
+            <div class="question-toggle" data-toggle="rankingCriteria">
+                <div class="content-toggle">
+                    <h2>何を基準にランキングを生成していますか？</h2>
+                </div>
+                <div class="hidden-content">
+                    testtesttesttesttesttesttest
+                </div>
             </div>
         </div>
     </div>
