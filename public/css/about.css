@@ -1,0 +1,13 @@
+/* About Section */
+.about_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_content_main {
+    width: 80%;
+    text-align: left;
+    padding: 10px 40px;
+    margin: 10px 40px;
+}
