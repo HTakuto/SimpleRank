@@ -17,9 +17,10 @@
     </div>
 
     <!-- Ranking Cards -->
+    @foreach ($product_categories as $key => $product_category)
     <div class="ranking_card_row_container">
         <div class="ranking_title">
-            <h2>１．商品カテゴリ</h2>
+            <h2>{{ $key + 1 }}．{{ $product_category->name }}</h2>
         </div>
 
         <div class="ranking_card_wrapper">
@@ -42,7 +43,6 @@
             <div class="slide_right_arrow big_arrow">&gt;</div>
         </div>
     </div>
-
-    <!-- Add more ranking cards as needed -->
+    @endforeach
 </main>
 @endsection
