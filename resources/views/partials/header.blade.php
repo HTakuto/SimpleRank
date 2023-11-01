@@ -1,4 +1,3 @@
-<!-- Header -->
 <header class="header">
     <div class="navbar">
         <div class="navbar-left">

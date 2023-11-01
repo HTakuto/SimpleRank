@@ -7,7 +7,6 @@
     @include('partials.header')
     @include('partials.hamburger')
     @yield('main')
-
     @include('partials.js')
 </body>
 </html>

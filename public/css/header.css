@@ -83,3 +83,20 @@
 .dropdown-content.active {
     display: block;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-left {
+        padding-left: 10%;
+    }
+
+    .navbar-right {
+        display: none;
+    }
+}

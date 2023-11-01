@@ -1,22 +1,20 @@
-<!-- Main -->
 @extends('layouts.app')
 
 @section('title', 'SimpleRank')
 
 @section('main')
 <main>
-    <!-- Hero Section -->
     <div class="hero_wrapper">
         <div class="hero_content">
             <h1 class="hero_title">ダミータイトル</h1>
-            <p class="hero_subtitle">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
-            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
-                <div class="hero_bold">強調文字</div>
+            <p class="hero_subtitle">
+                ダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                ダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+            <div class="hero_bold">強調文字</div>
             </p>
         </div>
     </div>
 
-    <!-- Ranking Cards -->
     @foreach ($product_categories as $key => $product_category)
     <div class="ranking_card_row_container">
         <div class="ranking_title">

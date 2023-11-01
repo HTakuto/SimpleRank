@@ -8,7 +8,8 @@
     <div class="hero_wrapper">
         <div class="hero_content">
             <h1 class="hero_title">SimpleRankの説明</h1>
-            <p class="hero_subtitle">SimpleRankの説明に加え、多くよせられる質問を記載しています<br>
+            <p class="hero_subtitle">
+                SimpleRankの説明に加え、多くよせられる質問を記載しています<br>
                 <div class="hero_bold">強調文字</div>
             </p>
         </div>
