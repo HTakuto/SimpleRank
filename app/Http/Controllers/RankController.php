@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Rank;
+use App\Models\ProductCard;
 
 class RankController extends Controller
 {
     public function index(){
-        return view('pages.main');
+        $product_cards = ProductCard::all();
+
+        return view('pages.main', compact('product_cards'));
     }
 }
