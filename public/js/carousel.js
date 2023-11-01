@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const cardWrapper = document.querySelector(".ranking_card_wrapper");
     const cards = document.querySelectorAll(".ranking_card");

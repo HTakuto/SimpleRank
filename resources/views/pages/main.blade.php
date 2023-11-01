@@ -1,4 +1,9 @@
-<!-- Main Content -->
+<!-- Main -->
+@extends('layouts.app')
+
+@section('title', 'SimpleRank')
+
+@section('main')
 <main>
     <!-- Hero Section -->
     <div class="hero_wrapper">
@@ -114,3 +119,4 @@
 
     <!-- Add more ranking cards as needed -->
 </main>
+@endsection
