@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Rank;
 use App\Models\ProductCard;
 use App\Models\ProductCategory;
 
