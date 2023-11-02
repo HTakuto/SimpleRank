@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestController;
 use App\Http\Controllers\RankController;
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +18,3 @@ Route::get('/', [RankController::class, 'index']);
 Route::get('/about', function () {
     return view('pages.about');
 });
-
-Route::get('tests/test', [TestController::class, 'index']);
