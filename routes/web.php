@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RankController;
+use App\Http\Controllers\AboutController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,4 @@ use App\Http\Controllers\RankController;
 */
 
 Route::get('/', [RankController::class, 'index']);
-
-Route::get('/about', function () {
-    return view('pages.about');
-});
+Route::get('/about', [AboutController::class, 'index']);
