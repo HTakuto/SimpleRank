@@ -1,22 +1,20 @@
 <!-- Mobile Menu -->
-<ul class="mobile-menu">
+<div class="mobile-menu">
     <div class="dropdown">
-        <li class="navbar-item navbar-item-drop">言語設定</li>
+        <div class="navbar-item navbar-item-drop">言語設定</div>
         <ul class="dropdown-content">
             <li><a href="#">Engligsh</a></li>
             <li><a href="#">日本語</a></li>
         </ul>
     </div>
-    <li class="navbar-item"><a href="{{ url('/about') }}">本サイトの説明</a></li>
-    <li class="navbar-item">お問い合わせ</li>
+    <a href="{{ url('/about') }}" class="navbar-item about_link">本サイトの説明</a>
+    <a href="#" class="navbar-item">お問い合わせ</a>
     <div class="dropdown">
-        <li class="navbar-item navbar-item-drop">商品ジャンル</li>
+        <div class="navbar-item navbar-item-drop">商品ジャンル</div>
         <ul class="dropdown-content">
-            <li><a href="#">Category 1</a></li>
-            <li><a href="#">Category 2</a></li>
-            <li><a href="#">Category 3</a></li>
-            <li><a href="#">Category 4</a></li>
-            <li><a href="#">Category 5</a></li>
+            @foreach ($product_categories as $key => $product_category)
+            <li><a href="#">{{ $product_category->name }}</a></li>
+            @endforeach
         </ul>
     </div>
-</ul>
+</div>

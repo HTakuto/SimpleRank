@@ -7,31 +7,18 @@
 
 .mobile-menu {
     display: none;
+    position: absolute;
     position: fixed;
-    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    width: 50%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 9;
-    overflow: auto;
+    padding: 20px 0px 0px 20px;
+    transition: all 1s;
 }
 
-/* Responsive Design */
+/* Hamburger Icon Style */
 @media (max-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-left {
-        padding-left: 10%;
-    }
-
-    .navbar-right {
-        display: none;
-    }
-
     .hamburger-icon {
         display: block;
         padding-right: 10%;
@@ -42,20 +29,9 @@
         padding-right: 10%;
     }
 
-    .mobile-menu {
-        display: none;
-        position: absolute;
-        background-color: #fff;
-        z-index: 2;
-        width: 50%;
-        height: 100vh;
-        transition: all 1s;
-    }
-
     .mobile-menu a {
         color: black;
         text-decoration: none;
-        padding: 12px 20px;
         display: block;
     }
 
@@ -64,13 +40,9 @@
     }
 
     .navbar-item {
-        padding: 40px 20px 0px;
+        padding: 0px;
+        margin-top: 20px;
         color: black;
-        position: relative;
         cursor: pointer;
-    }
-
-    .navbar-item a {
-        padding: 0;
     }
 }
