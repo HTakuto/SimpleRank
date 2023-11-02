@@ -16,6 +16,8 @@ class ProductCategoriesTableSeeder extends Seeder
     public function run()
     {
         $categories = [
+
+            // English
             // ['name' => 'All Categories', 'code' => 'all_categories'],
             // ['name' => 'Audible & Audiobooks', 'code' => 'audible_audiobook'],
             // ['name' => 'Amazon Devices', 'code' => 'amazon_devices'],
