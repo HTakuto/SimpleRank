@@ -52,3 +52,21 @@
 .content-toggle.active::after {
     content: "▲";
 }
+
+@media (max-width: 768px) {
+    .about_content_main {
+        width: 95%;
+        padding: 0px;
+        margin: 10px 20px;
+    }
+
+    .question{
+        font-size: 1rem;
+    }
+
+    .hidden-content {
+        font-size: 0.8rem;
+        padding: 10px;
+        margin: 0px;
+    }
+}

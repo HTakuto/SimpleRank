@@ -1,4 +1,3 @@
-<!-- Header -->
 <header class="header">
     <div class="navbar">
         <div class="navbar-left">
@@ -14,16 +13,14 @@
                     <li><a href="#">日本語</a></li>
                 </ul>
             </div>
-            <a href="{{ url('/about') }}"class="navbar-item">本サイトの説明</a>
+            <a href="{{ url('/about') }}" class="navbar-item">本サイトの説明</a>
             <a href="#" class="navbar-item">お問い合わせ</a>
             <div class="dropdown">
                 <span class="navbar-item navbar-item-drop">商品ジャンル</span>
                 <ul class="dropdown-content">
-                    <li><a href="#">Category 1</a></li>
-                    <li><a href="#">Category 2</a></li>
-                    <li><a href="#">Category 3</a></li>
-                    <li><a href="#">Category 4</a></li>
-                    <li><a href="#">Category 5</a></li>
+                    @foreach ($product_categories as $key => $product_category)
+                    <li><a href="#">{{ $product_category->name }}</a></li>
+                    @endforeach
                 </ul>
             </div>
         </div>
