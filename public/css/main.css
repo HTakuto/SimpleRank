@@ -113,7 +113,31 @@
     color: #333;
 }
 
-.big_arrow {
-    font-size: 4rem;
-    cursor: pointer;
+@media (max-width: 768px) {
+    .hero_content {
+        width: 80%;
+        text-align: left;
+        padding: 50px 20px 10px;
+        margin: 50px 20px 10px;
+    }
+
+    .hero_title {
+        font-size: 1.6rem;
+    }
+
+    .hero_subtitle {
+        font-size: 1rem;
+    }
+
+    .hero_bold {
+        font-size: 1rem;
+    }
+
+    .ranking_title {
+        font-size: 1.6rem;
+        text-align: left;
+        padding: 20px 20px 10px;
+        margin: 20px 20px 10px;
+    }
+
 }

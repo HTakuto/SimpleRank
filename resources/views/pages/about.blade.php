@@ -20,7 +20,7 @@
         <div class="about_content_main">
             <div class="question-toggle" data-toggle="siteDescription">
                 <div class="content-toggle">
-                    <h2>SimpleRankとは？</h2>
+                    <h2 class="question">SimpleRankとは？</h2>
                 </div>
                 <div class="hidden-content">
                     testtesttesttesttesttesttest
@@ -29,7 +29,7 @@
 
             <div class="question-toggle" data-toggle="siteLinks">
                 <div class="content-toggle">
-                    <h2>このサイト内のリンクは何ですか？</h2>
+                    <h2 class="question">このサイト内のリンクは何ですか？</h2>
                 </div>
                 <div class="hidden-content">
                     testtesttesttesttesttesttest
@@ -38,7 +38,7 @@
 
             <div class="question-toggle" data-toggle="targetAudience">
                 <div class="content-toggle">
-                    <h2>本サイトはどのような人に向いていますか？</h2>
+                    <h2 class="question">本サイトはどのような人に向いていますか？</h2>
                 </div>
                 <div class="hidden-content">
                     testtesttesttesttesttesttest
@@ -47,7 +47,7 @@
 
             <div class="question-toggle" data-toggle="rankingCriteria">
                 <div class="content-toggle">
-                    <h2>何を基準にランキングを生成していますか？</h2>
+                    <h2 class="question">何を基準にランキングを生成していますか？</h2>
                 </div>
                 <div class="hidden-content">
                     testtesttesttesttesttesttest
