@@ -14,7 +14,7 @@
                 </ul>
             </div>
             <a href="{{ url('/about') }}" class="navbar-item">本サイトの説明</a>
-            <a href="#" class="navbar-item">お問い合わせ</a>
+            <a href="{{ url('/contact') }}" class="navbar-item">お問い合わせ</a>
             <div class="dropdown">
                 <span class="navbar-item navbar-item-drop">商品ジャンル</span>
                 <ul class="dropdown-content">
