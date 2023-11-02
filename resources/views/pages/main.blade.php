@@ -4,6 +4,7 @@
 
 @section('main')
 <main>
+    <!-- Hero Section -->
     <div class="hero_wrapper">
         <div class="hero_content">
             <h1 class="hero_title">ダミータイトル</h1>
@@ -15,6 +16,7 @@
         </div>
     </div>
 
+    <!-- Product Section -->
     @foreach ($product_categories as $key => $product_category)
     <div class="ranking_card_row_container">
         <div class="ranking_title">
