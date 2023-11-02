@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RankController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,7 @@ use App\Http\Controllers\AboutController;
 |
 */
 
-Route::get('/', [RankController::class, 'index']);
-Route::get('/about', [AboutController::class, 'index']);
+Route::get('/', [RankController::class, 'index'])->name('index');
+Route::get('about', [AboutController::class, 'index'])->name('about.index');
+Route::get('contact', [ContactController::class, 'create'])->name('contact.create');
+Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
