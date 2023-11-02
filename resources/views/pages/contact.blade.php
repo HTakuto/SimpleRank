@@ -4,6 +4,19 @@
 
 @section('main')
 <main>
+    <!-- Hero Section -->
+    <div class="hero_wrapper">
+        <div class="hero_content">
+            <h1 class="hero_title">お問い合わせ</h1>
+            <p class="hero_subtitle">
+                お問い合わせいただきありがとうございます。<br>
+                お客様のご要望に答えられるよう尽力して参ります。<br>
+                <div class="hero_bold">個人情報を記載しないようご注意ください。</div>
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
     <div class="container">
         <div class="contact-form">
             <form method="POST" action="{{ route('contact.store') }}">
