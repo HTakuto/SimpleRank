@@ -8,10 +8,20 @@
         <div class="navbar-right">
             <div class="dropdown">
                 <span class="navbar-item navbar-item-drop">言語設定</span>
-                <ul class="dropdown-content">
-                    <li><a href="#">Engligsh</a></li>
-                    <li><a href="#">日本語</a></li>
-                </ul>
+                <div class="dropdown-content">
+                    <form action="{{ route('setlocale', 'en') }}" method="post">
+                        @csrf
+                            <button type="submit" class="drop-item">
+                                English
+                            </button>
+                    </form>
+                    <form action="{{ route('setlocale', 'ja') }}" method="post">
+                        @csrf
+                        <button type="submit" class="drop-item">
+                            日本語
+                        </button>
+                    </form>
+                </div>
             </div>
             <a href="{{ url('/about') }}" class="navbar-item">本サイトの説明</a>
             <a href="{{ url('/contact') }}" class="navbar-item">お問い合わせ</a>
