@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RankController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\LocaleController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +17,14 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', [RankController::class, 'index'])->name('index');
-Route::get('about', [AboutController::class, 'index'])->name('about.index');
-Route::get('contact', [ContactController::class, 'create'])->name('contact.create');
-Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
+// Route::get('/', [RankController::class, 'index'])->name('index');
+// Route::get('about', [AboutController::class, 'index'])->name('about.index');
+// Route::get('contact', [ContactController::class, 'create'])->name('contact.create');
+// Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
+// Route::get('/{locale}', [LocaleController::class, 'setLocale'])->name('setlocale');
+
+Route::get('/', [RankController::class, 'index'])->name('index')->middleware('set.locale');
+Route::get('about', [AboutController::class, 'index'])->name('about.index')->middleware('set.locale');
+Route::get('contact', [ContactController::class, 'create'])->name('contact.create')->middleware('set.locale');
+Route::post('contact', [ContactController::class, 'store'])->name('contact.store')->middleware('set.locale');
+Route::get('/{locale}', [LocaleController::class, 'setLocale'])->name('setlocale')->middleware('set.locale');
