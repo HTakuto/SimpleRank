@@ -21,4 +21,5 @@ Route::get('/', [RankController::class, 'index'])->name('index');
 Route::get('about', [AboutController::class, 'index'])->name('about.index');
 Route::get('contact', [ContactController::class, 'create'])->name('contact.create');
 Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/{locale}', [LocaleController::class, 'setLocale'])->name('setlocale');
 Route::post('/{locale}', [LocaleController::class, 'setLocale'])->name('setlocale');
