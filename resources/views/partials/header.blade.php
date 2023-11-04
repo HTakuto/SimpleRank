@@ -7,7 +7,7 @@
         </div>
         <div class="navbar-right">
             <div class="dropdown">
-                <span class="navbar-item navbar-item-drop">言語設定</span>
+                <span class="navbar-item navbar-item-drop">{{ trans('messages.language_settings') }}</span>
                 <div class="dropdown-content">
                     <form action="{{ route('setlocale', 'en') }}" method="post">
                         @csrf
@@ -23,10 +23,10 @@
                     </form>
                 </div>
             </div>
-            <a href="{{ url('/about') }}" class="navbar-item">本サイトの説明</a>
-            <a href="{{ url('/contact') }}" class="navbar-item">お問い合わせ</a>
+            <a href="{{ url('/about') }}" class="navbar-item">{{ trans('messages.about') }}</a>
+            <a href="{{ url('/contact') }}" class="navbar-item">{{ trans('messages.contact') }}</a>
             <div class="dropdown">
-                <span class="navbar-item navbar-item-drop">商品ジャンル</span>
+                <span class="navbar-item navbar-item-drop">{{ trans('messages.product_genre') }}</span>
                 <ul class="dropdown-content">
                     @foreach ($product_categories as $key => $product_category)
                     <li><a href="#">{{ $product_category->name }}</a></li>

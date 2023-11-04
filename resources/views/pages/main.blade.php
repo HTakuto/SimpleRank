@@ -7,11 +7,11 @@
     <!-- Hero Section -->
     <div class="hero_wrapper">
         <div class="hero_content">
-            <h1 class="hero_title">ダミータイトル</h1>
+            <h1 class="hero_title">{{ trans('messages.title') }}</h1>
             <p class="hero_subtitle">
-                ダミーテキストダミーテキストダミーテキストダミーテキスト<br>
-                ダミーテキストダミーテキストダミーテキストダミーテキスト<br>
-            <div class="hero_bold">強調文字</div>
+                {{ trans('messages.subtitle') }}<br>
+                {{ trans('messages.subtitle') }}<br>
+            <div class="hero_bold">{{ trans('messages.bold') }}</div>
             </p>
         </div>
     </div>
