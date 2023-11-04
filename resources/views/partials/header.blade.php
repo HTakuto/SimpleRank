@@ -9,18 +9,8 @@
             <div class="dropdown">
                 <span class="navbar-item navbar-item-drop">{{ trans('messages.language_settings') }}</span>
                 <div class="dropdown-content">
-                    <form action="{{ route('setlocale', 'en') }}" method="post">
-                        @csrf
-                            <button type="submit" class="drop-item">
-                                English
-                            </button>
-                    </form>
-                    <form action="{{ route('setlocale', 'ja') }}" method="post">
-                        @csrf
-                        <button type="submit" class="drop-item">
-                            日本語
-                        </button>
-                    </form>
+                    <a href="{{ route('setlocale', 'en') }}" class="drop-item">English</a>
+                    <a href="{{ route('setlocale', 'ja') }}" class="drop-item">日本語</a>
                 </div>
             </div>
             <a href="{{ url('/about') }}" class="navbar-item">{{ trans('messages.about') }}</a>
