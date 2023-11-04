@@ -7,11 +7,11 @@
     <!-- Hero Section -->
     <div class="hero_wrapper">
         <div class="hero_content">
-            <h1 class="hero_title">{{ trans('messages.title') }}</h1>
+            <h1 class="hero_title">{{ __('messages.title') }}</h1>
             <p class="hero_subtitle">
-                {{ trans('messages.subtitle') }}<br>
-                {{ trans('messages.subtitle') }}<br>
-            <div class="hero_bold">{{ trans('messages.bold') }}</div>
+                {{ __('messages.subtitle') }}<br>
+                {{ __('messages.subtitle') }}<br>
+            <div class="hero_bold">{{ __('messages.bold') }}</div>
             </p>
         </div>
     </div>
