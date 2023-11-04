@@ -7,16 +7,16 @@
         </div>
         <div class="navbar-right">
             <div class="dropdown">
-                <span class="navbar-item navbar-item-drop">言語設定</span>
-                <ul class="dropdown-content">
-                    <li><a href="#">Engligsh</a></li>
-                    <li><a href="#">日本語</a></li>
-                </ul>
+                <span class="navbar-item navbar-item-drop">{{ __('messages.language_settings') }}</span>
+                <div class="dropdown-content">
+                    <a href="{{ route('setlocale', 'en') }}" class="drop-item">English</a>
+                    <a href="{{ route('setlocale', 'ja') }}" class="drop-item">日本語</a>
+                </div>
             </div>
-            <a href="{{ url('/about') }}" class="navbar-item">本サイトの説明</a>
-            <a href="{{ url('/contact') }}" class="navbar-item">お問い合わせ</a>
+            <a href="{{ url('/about') }}" class="navbar-item">{{ __('messages.about') }}</a>
+            <a href="{{ url('/contact') }}" class="navbar-item">{{ __('messages.contact') }}</a>
             <div class="dropdown">
-                <span class="navbar-item navbar-item-drop">商品ジャンル</span>
+                <span class="navbar-item navbar-item-drop">{{ __('messages.product_genre') }}</span>
                 <ul class="dropdown-content">
                     @foreach ($product_categories as $key => $product_category)
                     <li><a href="#">{{ $product_category->name }}</a></li>

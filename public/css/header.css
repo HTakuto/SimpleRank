@@ -76,7 +76,7 @@
     border: 1px solid #ccc;
 }
 
-.dropdown-content a {
+.drop-item {
     color: black;
     padding: 12px 16px;
     width: 200px;
