@@ -13,11 +13,7 @@ class LocaleController extends Controller
         if (in_array($locale, ['en', 'ja'])) {
             session(['locale' => $locale]);
         }
-
-        $product_cards = ProductCard::all();
-        $product_categories = ProductCategory::all();
         app()->setLocale($locale);
-
-        return view('pages.main', compact('product_cards', 'product_categories'));
+        return redirect()->back();
     }
 }
