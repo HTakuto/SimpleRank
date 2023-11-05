@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const toggles = document.querySelectorAll('.content-toggle');
 
-    toggles.forEach(function (toggle) {
-        const toggleButton = toggle.querySelector('.content-toggle::after');
+    function toggleContent(event) {
+        const toggle = event.currentTarget;
         const hiddenContent = toggle.querySelector('.hidden-content');
+        toggle.classList.toggle('active');
+    }
 
-        toggle.addEventListener('click', function () {
-            toggle.classList.toggle('active');
-        });
+    toggles.forEach(function (toggle) {
+        toggle.addEventListener('click', toggleContent);
     });
 });
