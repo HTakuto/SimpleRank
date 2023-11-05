@@ -9,7 +9,8 @@
         <div class="hero_content">
             <h1 class="hero_title">{{ __('messages.about_title') }}</h1>
             <p class="hero_subtitle">
-                {{ __('messages.about_subtitle') }}<br>
+                {{ __('messages.about_subtitle_1') }}<br>
+                {{ __('messages.about_subtitle_2') }}<br>
                 <div class="hero_bold">{{ __('messages.about_bold') }}</div>
             </p>
         </div>
