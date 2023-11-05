@@ -3,7 +3,7 @@
     <div class="navbar">
         <div class="navbar-left">
             <div class="app-logo">
-                <a href="{{ url('/') }}">SimpleRank</a>
+                <a href="{{ url('/') }}">MinimalRank</a>
             </div>
         </div>
         <div class="navbar-right">

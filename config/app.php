@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'SimpleRank'),
+    'name' => env('APP_NAME', 'MinimalRank'),
 
     /*
     |--------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'SimpleRank | contact')
+@section('title', 'MinimalRank | contact')
 
 @section('main')
 <main>
