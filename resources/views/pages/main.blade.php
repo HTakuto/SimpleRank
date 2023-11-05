@@ -11,7 +11,7 @@
             <p class="hero_subtitle">
                 {{ __('messages.subtitle') }}<br>
                 {{ __('messages.subtitle') }}<br>
-            <div class="hero_bold">{{ __('messages.bold') }}</div>
+                <div class="hero_bold">{{ __('messages.bold') }}</div>
             </p>
         </div>
     </div>
