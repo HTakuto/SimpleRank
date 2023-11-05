@@ -1,7 +1,7 @@
 /* Hero Section */
 .hero_wrapper {
     width: 100%;
-    border-bottom: 0.1px solid black;
+    border-bottom: 0.1px solid #ccc;
 }
 
 .hero_content {

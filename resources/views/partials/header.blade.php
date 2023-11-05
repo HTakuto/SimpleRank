@@ -19,7 +19,7 @@
                 <span class="navbar-item navbar-item-drop">{{ __('messages.product_genre') }}</span>
                 <ul class="dropdown-content">
                     @foreach ($product_categories as $key => $product_category)
-                    <li><a href="#">{{ $product_category->name }}</a></li>
+                    <li><a href="#" class="drop-item">{{ $product_category->name }}</a></li>
                     @endforeach
                 </ul>
             </div>
