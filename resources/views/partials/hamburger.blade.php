@@ -1,5 +1,6 @@
 <!-- Mobile Menu -->
 <div class="mobile-menu">
+    <!-- Mobile Language Dropdown -->
     <div class="dropdown">
         <div class="navbar-item navbar-item-drop">{{ __('messages.language_settings') }}</div>
         <div class="dropdown-content">
@@ -7,8 +8,11 @@
             <a href="{{ route('setlocale', 'ja') }}" class="drop-item">日本語</a>
         </div>
     </div>
-    <a href="{{ url('/about') }}" class="navbar-item about_link">{{ __('messages.about') }}</a>
+    <!-- Mobile About Us Link -->
+    <a href="{{ url('/about') }}" class="navbar-item">{{ __('messages.about') }}</a>
+    <!-- Mobile Contact Us Link -->
     <a href="{{ url('/contact') }}" class="navbar-item">{{ __('messages.contact') }}</a>
+    <!-- Mobile Product Genre Dropdown -->
     <div class="dropdown">
         <div class="navbar-item navbar-item-drop">{{ __('messages.product_genre') }}</div>
         <ul class="dropdown-content">
@@ -18,3 +22,4 @@
         </ul>
     </div>
 </div>
+

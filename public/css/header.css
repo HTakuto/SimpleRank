@@ -13,6 +13,7 @@
     z-index: 10;
 }
 
+/* Navbar Style */
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -89,6 +90,7 @@
     display: block;
 }
 
+/* Mobile Styling */
 @media (max-width: 768px) {
     .navbar {
         display: flex;
