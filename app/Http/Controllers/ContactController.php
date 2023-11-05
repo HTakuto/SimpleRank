@@ -19,17 +19,12 @@ class ContactController extends Controller
     public function store(Request $request)
     {
 
-        $this->validate($request, [
-            'contact' => 'required|max:1000',
-        ]);
+        $this->validate($request, Contact::$rules);
 
         Contact::create([
             'contact' => $request->contact,
         ]);
 
-        $product_cards = ProductCard::all();
-        $product_categories = ProductCategory::all();
-
-        return to_route('index', compact('product_cards', 'product_categories'));
+        return redirect()->back();
     }
 }
