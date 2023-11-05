@@ -12,4 +12,8 @@ class Contact extends Model
     protected $fillable = [
         'contact'
     ];
+
+    public static $rules = [
+        'contact' => 'required|max:1000',
+    ];
 }

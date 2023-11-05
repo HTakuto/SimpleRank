@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ProductCard;
-use App\Models\ProductCategory;
 
 class LocaleController extends Controller
 {
